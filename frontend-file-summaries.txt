@@ -1,0 +1,19 @@
+{
+  "frontend/src/index.css": "Global styles with OKLCH color system featuring editorial typography (serif for content, sans-serif for UI) and a subtle white-to-purple-blue gradient background with generous spacing.",
+  "frontend/src/App.tsx": "Main application component managing page navigation state with admin access guard that redirects non-admin users away from the admin page, rendering appropriate page components with header, footer, and profile setup modal.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for all backend operations including user profiles, page content, essays, and contact information with proper state management, cache invalidation, and authentication-aware admin status checking.",
+  "frontend/src/components/Header.tsx": "Navigation header with site title \"Tomwm\", page links, authentication-aware admin access (shown only when user is logged in and confirmed as admin), and login/logout functionality.",
+  "frontend/src/components/Footer.tsx": "Simple footer with copyright notice and caffeine.ai attribution link.",
+  "frontend/src/components/ProfileSetupModal.tsx": "Modal dialog for first-time user profile setup requiring name input after Internet Identity login.",
+  "frontend/src/pages/HomePage.tsx": "Home page displaying editable introduction content and the featured essay with title, date, tags, and excerpt using standardized layout (max-w-4xl).",
+  "frontend/src/pages/AboutPage.tsx": "About page displaying editable long-form biographical content with title, subtitle, and main text using standardized layout (max-w-4xl).",
+  "frontend/src/pages/WritingPage.tsx": "Writing page listing all essays with titles, publication dates, tags, excerpts, and featured status indicators.",
+  "frontend/src/pages/ContactPage.tsx": "Contact page displaying editable text content and clickable links to email, LinkedIn, and Bluesky with icons using standardized layout (max-w-4xl).",
+  "frontend/src/pages/AdminPanel.tsx": "Admin-only panel with tabbed interface for managing all page content, essays, and contact information, featuring proper access control with login prompt for unauthenticated users and access denied message for non-admins.",
+  "frontend/src/components/AdminPageEditor.tsx": "Reusable component for editing page content (title, subtitle, main text) with proper change detection logic, save functionality, and toast notifications for success/error feedback.",
+  "frontend/src/components/AdminEssayManager.tsx": "Essay management interface for adding, editing, deleting essays and setting featured status with dialog-based forms and toast notifications for all operations.",
+  "frontend/src/components/AdminContactEditor.tsx": "Combined editor for contact page content and social media links (email, LinkedIn, Bluesky) with improved change detection logic and toast notifications for save operations.",
+  "frontend/src/hooks/useEditor.ts": "Placeholder initialization function for editor setup (currently empty as not required).",
+  "frontend/src/config.ts": "Configuration loader for backend canister connection with environment-specific settings and actor creation.",
+  "frontend/src/main.tsx": "Application entry point with QueryClient, InternetIdentityProvider, ThemeProvider, and Toaster component for notifications."
+}
